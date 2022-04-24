@@ -7,6 +7,6 @@ This application was created to allow employees with busy schedules to add event
 The application uses JavaScript and jQuery methods to allow the user to interact with the webpage and execute functions such as viewing current time, adding events, and saving events to local storage. Building this application allowed me to further develop JavaScript skills together with other methods such as jQuery to further enhance the user experience within the application. 
 
 # Usage
-My work day scheduler application can be accessed at  and the source code can be viewed at GitHub page (dennismacc) under the Work-Day-Scheduler repository.
+My work day scheduler application can be accessed at https://dennismacc.github.io/Work-Day-Scheduler/ and the source code can be viewed at GitHub page (dennismacc) under the Work-Day-Scheduler repository.
 
 <img src="wds_preview.jpg" width="700">
