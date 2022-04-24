@@ -20,10 +20,12 @@ function timeBlocks(hour, todo = "") {
   );}
 
   // Show current date and time on webpage
+  var update = function (){
   var date = new Date();
   var n = date.toDateString();
   var time = date.toLocaleTimeString();
-  document.getElementById('date').innerHTML = n + ' ' + time;
+  document.getElementById('date').innerHTML = n + ' ' + time;}
+  setInterval(update, 1000);
 
 // For loop to creat timeBlocks
 for (var i = 0; i < 9; i++) {
