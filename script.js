@@ -17,24 +17,22 @@ function timeBlocks(hour, todo = "") {
         <textarea name="" id="${hourName}" cols="30" rows="3" class="description col-9 ${state}">${todo || ""}</textarea>
         <button class="btn saveBtn col-2">Save</button>
     </div>`)
-  );
+  );}
 
-}
-
+// For loop to creat timeBlocks
 for (var i = 0; i < 9; i++) {
   timeBlocks(i);
 }
 
+// Make save button interactive and add event listener to save buttons
 var btns = document.querySelectorAll(".saveBtn");
-
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", saveSchedule);
 }
 
+// Save todo to local storage 
 function saveSchedule(event) {
-
   var todoValue = event.target.parentNode.children[1].value;
   var todoKey = event.target.parentNode.children[1].id;
-
   localStorage.setItem(todoKey, todoValue);
 }
