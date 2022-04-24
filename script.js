@@ -10,7 +10,6 @@ function timeBlocks(hour, todo = "") {
   var hourName = hours[hour];
   // Gets info from local storage and uses jQuery append method to display the info in the container 
   var todo = localStorage.getItem(hourName);
-  console.log(hourName, todo);
   $(".container").append(
     $(`
     <div class="row time-block">
@@ -27,7 +26,6 @@ for (var i = 0; i < 9; i++) {
 }
 
 var btns = document.querySelectorAll(".saveBtn");
-console.log(btns[0]); 
 
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", saveSchedule);
@@ -38,6 +36,5 @@ function saveSchedule(event) {
   var todoValue = event.target.parentNode.children[1].value;
   var todoKey = event.target.parentNode.children[1].id;
 
-  console.log("key values ", todoKey, todoValue);
   localStorage.setItem(todoKey, todoValue);
 }
